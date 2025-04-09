@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --text-color: #000000; /* Static text color */
+  --background-color: #ffffff; /* Static background color */
+}
+
+.banner-images {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-banner {
+  background-image: url('../assets/images/banner.jpg');
+}
+
+.login-banner {
+  background-image: url('../assets/images/login-banner.jpg');
+}
+.inner-banner {
+    background-image: url('../assets/images/innerbanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* width: 100vw; */
+    height: 35vh;
+}
+
+.header-icon {
+  height: 46px;
+  width: 46px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-icon-search{
+  height: 46px;
+  width: 46px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.social-media-icons {
+  height: 43px;
+  width: 43px;
+  border-radius: 100px;
+  background-color: #DCDBD9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Apply the light theme universally */
+body {
+  background: var(--background);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+}
